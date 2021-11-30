@@ -1,0 +1,22 @@
+{
+  "name": "command-line-profile",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magfinn/Command-line-profile.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magfinn/Command-line-profile/issues"
+  },
+  "homepage": "https://github.com/magfinn/Command-line-profile#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
+}
