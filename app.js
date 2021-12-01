@@ -128,19 +128,13 @@ const promptProject = portfolioData => {
 promptUser()
 .then(promptProject)
 .then(portfolioData => {
-    console.log(portfolioData);
+    const pageHTML = generatePage(portfolioData);
+
+fs.write('./index.html', pageHTML, err => {
+    if (err) throw err;
+    console.log('Portfolio complete! Check out index.html to see the output.');
+});
 });
 
-
-
-
-
-// const pageHTML = generatePage(name,github);
-
-// fs.write('./index.html', pageHTML, err => {
-//     if (err) throw err;
-
-//     console.log('Portfolio complete! Check out index.html to see the output.');
-// });
 
 
