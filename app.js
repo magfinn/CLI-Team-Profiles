@@ -121,7 +121,7 @@ const promptProject = portfolioData => {
             return promptProject(portfolioData);
         } else {
             return portfolioData;
-        };
+        }
     });
 };
 
