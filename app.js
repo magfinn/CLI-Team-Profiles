@@ -55,8 +55,8 @@ const promptProject = portfolioData => {
     if(!portfolioData.projects) {
         portfolioData.projects = [];
     }
-
-    return inquirer.prompt([
+    return inquirer
+    .prompt([
         {
             type: 'input',
             name: 'name',
@@ -117,7 +117,7 @@ const promptProject = portfolioData => {
     ])
     .then(projectData => {
         portfolioData.projects.push(projectData);
-        if (projectData.confirmAddProjects) {
+        if (projectData.confirmAddProject) {
             return promptProject(portfolioData);
         } else {
             return portfolioData;
@@ -130,10 +130,7 @@ promptUser()
 .then(portfolioData => {
     const pageHTML = generatePage(portfolioData);
 
-fs.write('./index.html', pageHTML, err => {
-    if (err) throw err;
-    console.log('Portfolio complete! Check out index.html to see the output.');
-});
+fs.writeFile('./dist/index.html'); 
 });
 
 
