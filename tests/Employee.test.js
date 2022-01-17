@@ -11,12 +11,12 @@ test('test add name', () => {
 });
 
 test('test add id', () => {
-  const employee = new Employee('Susan', '3333');
-  expect(employee.id).toBe('3333');
+  const employee = new Employee('Susan', '333');
+  expect(employee.id).toBe('333');
 });
 
 test('test add email', () => {
-  const employee = new Employee('Susan', '3333', 'susan333@gmail.com');
+  const employee = new Employee('Susan', '333', 'susan333@gmail.com');
   expect(employee.email).toBe('susan333@gmail.com');
 });
 
@@ -26,16 +26,16 @@ test('test getName()', () => {
 });
 
 test('test getId())', () => {
-  const employee = new Employee('Susan', '3333');
-  expect(employee.getId()).toBe('3333');
+  const employee = new Employee('Susan', '333');
+  expect(employee.getId()).toBe('333');
 });
 
 test('test getEmail()', () => {
-  const employee = new Employee('Susan', '3333', 'susan333@gmail.com');
+  const employee = new Employee('Susan', '333', 'susan333@gmail.com');
   expect(employee.getEmail()).toBe('susan333@gmail.com');
 });
 
 test('test getRole()', () => {
-  const employee = new Employee('Susan', '3333', 'susan333@gmail.com');
+  const employee = new Employee('Susan', '333', 'susan333@gmail.com');
   expect(employee.getRole()).toBe('Employee');
 });
