@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 const generatePage = require('./src/page-template');
-const { writeFile, copyFile } = require('./utils/generate-site.js');
+const { writeFile, copyFile } = require('./utils/generate-site');
 
 const Employee = require('./lib/Employee');
 const Manager = require('./lib/Manager');
@@ -16,7 +16,7 @@ function promptUser() {
     .prompt([
       {
         type: 'input',
-        name: 'name',
+        name: 'teamName',
         message: 'What is the name of your team for this project? (Required)',
         validate: (nameInput) => {
           if (nameInput) {
@@ -29,7 +29,7 @@ function promptUser() {
       },
     ])
     .then((teamNameData) => {
-      const teamName = teamNameData.teamname;
+      const teamName = teamNameData.teamName;
       teamObj.push(teamName);
       //function to add a team manager
       addManager();
@@ -326,12 +326,12 @@ function pageTemplate() {
             <h1 class="page-title text-secondary bg-dark py-2 px-3">${teamObj[0]}</h1>
             </div>
         </header>
+        <main class="container">
     `;
   htmlObj.push(htmlHeader);
 
   for (let i = 1; i < teamObj.length; i++) {
     let htmlCurrentObj = `
-        <main class="container">
             <div class ="card"> 
                 <div class = "card-header">
                     <h2>${teamObj[i].name}</h2>
