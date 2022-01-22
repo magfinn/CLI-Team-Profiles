@@ -23,7 +23,19 @@ Using the node installer package, install inquirer. `npm i inquirer`
 Once you have inquirer set up, render prompts `node index.js`
 Answer the questions && check your "dist" folder for your new profile!
 
+## ✨ Demo
+
+https://user-images.githubusercontent.com/89879013/150631215-36a1fad3-e2f9-4a12-bfb0-c279192dd53f.mov
+
 >
+  >>Prompts
+  
+![Screen Shot 2022-01-17 at 7 00 09 PM](https://user-images.githubusercontent.com/89879013/150631196-9fa295bc-26a8-43a0-8d79-6b8452ffa5e3.png)
+  
+  >
+  >>Finished Profile
+
+<img width="998" alt="Screen Shot 2022-01-22 at 12 37 17 AM" src="https://user-images.githubusercontent.com/89879013/150631223-4de7f435-1929-4834-b249-5a24b15580a6.png">
 
 > >
 
@@ -32,11 +44,6 @@ Answer the questions && check your "dist" folder for your new profile!
 I tested this app with jest. To install jest, `npm i jest`
 <image src="./assets/images/jest-tests.png</image>
 
-## 🤝 Contributing
-
-## ❓ Questions?
-
-> Have questions or need more information? Contact me by <a href='mailto:magfin@github.com'>e-mail</a>.
 
 **Maggie Finnegan**
 
