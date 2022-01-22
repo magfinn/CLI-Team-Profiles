@@ -312,33 +312,32 @@ function pageTemplate() {
   const htmlHeader = `
     <!DOCTYPE html>
     <html lang="en">
+  
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>${teamObj[0]} Team Profile</title>
-        <link href="https://fonts.googleapis.com/css?family=Public+Sans:300i,300,500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="style.css">
+        <title>${teamObj[0]}</title>
+        <link rel="stylesheet" href="./style.css">
     </head>
+   
     <body>
         <header>
-            <div class="container flex-row justify-space-between align-center py-3">
-            <h1 class="page-title text-secondary bg-dark py-2 px-3">${teamObj[0]}</h1>
-            </div>
+            <h1>${teamObj[0]}</h1>
         </header>
-        <main class="container">
+        <div class = "card-container">
     `;
   htmlObj.push(htmlHeader);
 
   for (let i = 1; i < teamObj.length; i++) {
     let htmlCurrentObj = `
-            <div class ="card"> 
+           <div class = "card-member"> 
                 <div class = "card-header">
                     <h2>${teamObj[i].name}</h2>
                     <h3>${teamObj[i].role}</h3>
                 </div>
                 <div class = "card-body">
-                    <p>ID: ${teamObj[i].id}</p>
+                    <p>Employee ID: ${teamObj[i].id}</p>
                     <p>Email: <a href = "mailto: ${teamObj[i].email}">${teamObj[i].email}</a></p>
             `;
     //if office number is included
