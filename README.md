@@ -1,4 +1,4 @@
-<h1 align="center">✨CLI Team Profile✨</h1>
+<h1 align="center">✨Dream Team Maker✨</h1>
 
 <p>
 <a href="https://opensource.org/licenses/MIT">
@@ -9,7 +9,7 @@
 
 > This is a quick and easy to use profile generator designed to showcase you and your team. After a short series of prompts, all through the CLI, and just a few minutes you will have a styled profile to show off your awesome team!
 
-🔗 <a href = 'https://www.github.com/magfinn/CLI-Team-Profiles'>Link<a/>
+🔗 <a href = 'https://www.github.com/magfinn/Dream-Team-Maker'>Link<a/>
 
 ## ✅ Installing / Getting Started
 
